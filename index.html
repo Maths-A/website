@@ -1,66 +1,288 @@
-<!doctype html>
-<html lang="fr">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
-
-    <title>Mathis Aubert Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Mathis AUBERT</title>
+	<link rel="stylesheet" href="ressources/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
-<body>
-    <div class="p-5 bg-primary text-white text-center" id="header" style="background-image: linear-gradient(180deg, rgb(0, 3, 184), rgb(0, 38, 255))";>
-        <h1>Mathis Aubert</h1>
-    </div>
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="Index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="">À propos de moi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="">Formation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="">Compétences</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="">CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <h1 style="position: relative; top: 20px; left: 20px;">Site en construction ...</h1>
-
-    <h3 style="position: relative; top: 25px; left: 20px;">Pas de panique ! Vous pouvez me retrouver sur linkedin ;)
-    </h3>
-
-    <div style="position: relative; top: 30px; left: 20px;">
-        <a href="https://www.linkedin.com/in/mathisaubert2911/">
-            <img src="linkedin-logo.png" alt="linkedin Logo"
-                style="width: 40px; position: relative;top: 20px; left: 30px;">
-        </a>
-        <p style="position: relative; left: 80px; bottom: 10px; ">←ICI !</p>
-    </div>
-
-    <footer class="mt-5 p-4 bg-dark text-white text-center " id="footer"
-        style="position: absolute;bottom: 0px;width: 100%;">
-        <p>Mathis AUBERT 2022</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<body style="background-color: black;">
+	<header>
+		<nav class="navbar navbar-expand-sm fixed-top" style="opacity: 0.9;background-color: inherit;">
+            <div class="container-fluid">
+                <!-- mettre Mathis Aubert en image fait à la main -->
+              <a class="navbar-brand" href="#" style="font-family: 'San Francisco', sans-serif;">
+				<img src="ressources/media/images/NameTitle.png" alt="NameTitle" style="max-width: 40%;margin-left: 10px;"></img>
+			  </a>
+			  <div style="position: relative;align-content: end;">
+				<a class="nav-item" href="#about" style="font-family: 'San Francisco', sans-serif; text-decoration: none; color: white;">About Me</a>
+				<a class="nav-item" href="ressources/media/files/Resume Mathis AUBERT Intenship.pdf" target=”_blank” style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; color: white;">Resume</a>
+				<a class="nav-item" href="https://www.linkedin.com/in/mathisaubert2911/" target=”_blank” style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; color: white;">LinkedIn</a>
+				<a class="nav-item" href="#contact" style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; margin-right: 10px; color: white;">Contact</a>
+			  </div>
+            </div>
+        </nav>
+	</header>
+	<!-- Part 1 -->
+	<main class="container-fluid" style="margin-top:70px;background-color: black;color: white;">
+        <section class="hero" style="text-align: center;background-color: inherit;color: inherit;">
+			<img src="ressources/media/images//f9d165d9-43e7-4896-991b-b90a87c72f15.png" alt="Mathis at Intel" style="max-width: 100%;height: auto;"></img>
+			<p style="margin-right: 45%;">Me at Intel Corp</p>
+			<!-- FIXME : Trouver une solution ici ! -->
+            <h1 style="font-family: AppleGaramond-Light; margin-bottom: 30px;">Welcome to my software engineer portfolio!</h1>
+			<a class="button-89" href="#about" class="cta">Enter</a>
+		</section>
+	</main>
+	<div id="about"></div>
+	<!-- Part 2 -->
+	<main class="container-fluid" style="margin-top:70px;background: linear-gradient(to bottom right, #000000 33%, #600066 100%);color: white;">
+		<section class="about">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">About Me</h2>
+			<div class="row" >
+				<div class="col-sm-3" style="text-align: center;margin-left: 50px;">
+					<img src="ressources/media/images/IMG_4195 (1).png" width="300px" alt="Mathis's photo">
+				</div>
+				<div class="col-sm-8">
+					<p style="text-align: center; font-family: 'San Francisco', sans-serif; margin: 80px; margin-top: 10px; margin-bottom: 20 px;">As a highly motivated student in an alternation program with Sopra Steria, I'm eager to gain practical experience in software engineering while pursuing my degree in Computer Science at CESI (College engineering school and Master Degree). <br><br>
+						With a strong foundation in programming languages such as Java, Python, C/C++, and more, I'm well-equipped to tackle complex coding challenges. In addition to my academic pursuits, I've completed multiple projects that have given me hands-on experience in Big Data, software development, and information system administration. <br>
+						As a quick learner and natural problem-solver, I thrive in collaborative team environments and am always willing to go the extra mile to deliver high-quality results on time. <br><br>
+						I'm passionate about building a career in software engineering and contributing to innovative projects that make a positive impact on people's lives.<br><br>
+						Let's connect and explore how we can collaborate and learn from each other in the dynamic world of technology.</p>
+				</div>
+			</div>
+		</section>
+		<section id="studies">
+			<h2 style="margin-left: 20px;margin-bottom: 40px;">Studies 🎓</h2>
+			<div class="row" style="margin-left: 40px;">
+				<div class="col-sm-6" >
+					<h4>Master of Science in Computer Science</h4>
+					<h5 style="font-size: smaller;">CESI (College of Engineering School and Masters), Lyon, France | 2022 – 2025</h5> <!-- mettre le texte plus foncé -->
+					<h6 style="font-size: small;"><br>1ST Semester - GPA : 4.80/5 - Summa cum laude </h6>
+				</div>
+				<div class="col-sm-3">
+					<img src="ressources/media/images/Logo_cesi_2022.png" width="100px" alt="Cesi's logo">				
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Preparatory cycle in Computer Science</h4>
+					<h5 style="font-size: smaller;">CESI (College of Engineering School and Masters), Aix-en-Provence, France | 2020 – 2022</h5> <!-- mettre le texte plus foncé -->
+					<h6 style="font-size: small;"><br>GPA : 4.51/5 - Summa cum laude </h6>
+				</div>
+				<div class="col-sm-3">
+					<img src="ressources/media/images/Logo_cesi_2022.png" width="100px" alt="Cesi's logo">					
+				</div>
+			</div>
+			
+		</section>
+		<section id="experiences">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Experiences 👨‍💻</h2>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Software engineer Co-op</h4>
+					<h5 style="font-size: smaller;">Sopra Steria, Limonest, France | October 2022 - September 2025</h5> <!-- mettre le texte plus foncé -->
+					<p style="text-align: justify; font-size: small;margin-left: 30px;">🔷 June 2022 - present<br>
+						~ Upgrading web application Java Server Faces<br>
+						~ Migrating compiler version from Java 6 to Java 8<br>
+						~ Migrating front library from RichFaces to PrimeFaces<br>
+						Customer: Électricité de France (EDF)<br>
+						Technical environment: Java, PrimeFaces, PostgreSQL, Oracle Weblogic, IntelliJ, Git, GitLab, Confluence</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="ressources/media/images/logoSopraSteria.jpg" width="100px" alt="Sopra-Steria's logo" >					
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Software developer intern</h4>
+					<h5 style="font-size: smaller;">Sopra Steria, Limonest, France | April 2022 - September 2022</h5> <!-- mettre le texte plus foncé -->
+					<p style="text-align: justify; font-size: small;margin-left: 30px;">🔷 June 2022 - continued during the Co-op<br>
+						~ Upgrading web application Java Server Faces<br>
+						~ Migrating compiler version from Java 6 to Java 8<br>
+						~ Migrating front library from RichFaces to PrimeFaces<br>
+						Customer: Électricité de France (EDF)<br>
+						Technical environment: Java, PrimeFaces, PostgreSQL, Oracle Weblogic, IntelliJ, Git, GitLab, Confluence<br>
+						<br>
+						🔷 May 2022<br>
+						~ Created automated tasks in Vba<br>
+						Customer: Sopra Steria Project Managers<br>
+						Technical environment: Visual Basic for Application, Excel<br>
+						<br>
+						🔷 April 2022 - May 2022<br>
+						~ Created automated tasks in Java<br>
+						~ Convert PDF purchase orders in Excel<br>
+						~ Maintaining in operational condition the application<br>
+						Customer: Sopra Steria Sales Managers<br>
+						Technical environment: Java, JUnit, Eclipse, Git, GitLab, Excel, Agile methodology</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="ressources/media/images/logoSopraSteria.jpg" width="100px" alt="Sopra-Steria's logo" >					
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Job shadowing</h4>
+					<h5 style="font-size: smaller;">INTEL CORPORATION, Moirans, France | December 2018</h5> <!-- mettre le texte plus foncé -->
+					<p style="text-align: justify; font-size: small;margin-left: 30px;">🔷 3 days job shadowing :<br>
+						~ Discovered the business world<br>
+						~ Followed software engineers and understood their work<br>
+						~ Learnt about programming languages (C, Java, Python, Go)</p>
+				</div>
+				<div class="col-sm-3">
+					<img src="ressources/media/images/Intel-Logo.png" width="180px" alt="Intel's logo" style="margin-left: -40px;">					
+				</div>
+			</div>
+		</section>
+		<section id="projects">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Projects 💻</h2>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<h4>Master of Science in CS</h4>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">Advance algorithms</div>
+						<div class="card-body">Created 2 algorithms using the ant colony and hill climbing methods to find a good solution of the Vehicle Routing Problem.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: Algorithms, Operational research, Complexity class, graph theory, Decision and optimisation problems, meta-heuristic.
+							<br>Technical environment: Python, Jupyter, Git, GitHub</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">Big Data</div>
+						<div class="card-body">Created a complete architecture Big Data to analyse and create report with medicals data. We performed heterogeneous data extraction and transformation to a Data Warehouse. Then we created diagrams and report to show KPI on Power BI.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: Architecture Big Data, Data Integration, ETL, Physical model and optimization, Data exploitation and analysis, Reporting
+							<br>Technical environment: Talend, Power BI, Cloudera</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">System programming</div>
+						<div class="card-body" style="font-size: 13px;">Created a graphical software in C# about manage backups. Inside the Software we were able to manage backups (CRUD), execute several backups at the same time (start, stop, pause), encrypt and execute in a remote app client-server handling sockets.
+							<br>The software built with a MVVM architecture.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: Object-oriented programming, Multi-threading, Design pattern, UML, client-server, conceptual data model/ logical data model/ physical data model
+							<br>Technical environment: C#, .NET, Visual Studio, WPF, Git, Azure Devops</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">Administration of an information system</div>
+						<div class="card-body">Rebuilt the information system after a fusion of two companies</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: The different components of the Information System (I.S.), management strategies, security (firewall, proxy), containerization techniques, useful notions in administration, automation (scripts), Supervision.
+							<br>Technical environment: Microsoft server 2019, pfSense, Docker, powerShell, Centreon, Grafana, Docker</div>
+					</div>					
+				</div>
+			</div>
+			<!--  -->
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<h4>Preparatory cycle in CS</h4>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">WEB development</div>
+						<div class="card-body">Created an internal website for internship opportunities.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: API, CRUD, HTML5, CSS, Javascript, bootstrap, PHP, SQL
+							<br>Technical environment: MySQL, XAMPP, Apache HTTP server, phpMyAdmin</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">Network and System</div>
+						<div class="card-body">Management of the internet network of a virtual city. Several building (companies, librairie and data center)
+											<br>CCNA : Introduction to network Certification </div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: LAN, MAN, WAN, VLAN, troubleshooting, configuration of switch and router, Operation of local area network
+							<br>Technical environment: Cisco Packet Tracer</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">OOP Project</div>
+						<div class="card-body">Created a graphical software in C++ for an Electronics Company. Inside the Software we were able to manage workers, clients, items, order and statistics.
+							<br>We did UML diagrams and use a MVC architecture</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: Object-oriented programming, Unit Tests, UML, conceptual data model/ logical data model/ physical data model
+							<br>Technical environment: C++, Visual Studio, WinForms, Microsoft SQL Server, SQL, JMerise</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">Embedded system</div>
+						<div class="card-body">Created a connected weather station by the Arduino UNO board.
+							<br>The difficulties was to have a lot a elements on the board as SD, GPS, sensors… 
+							<br>We had only 2 KB of RAM and we needed to reduce complexity.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: complexity, Function pointer, Compilation
+							<br>Technical environment: Arduino, C</div>
+					</div>					
+				</div>
+			</div>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<div class="col-sm-6">
+					<div class="card" style="background: linear-gradient(to top right, #000000 33%, #6600cc 100%);color: white;">
+						<div class="card-header" style="border-color: #30005f;">DB modelling</div>
+						<div class="card-body">Created a DB for a Passenger transportation company.</div> 
+						<div class="card-footer" style="font-size: 14px;border-color: #30005f;">Notions: conceptual data model/ logical data model/ physical data model
+							<br>Technical environment: MySQL, SQL</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Awards">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Awards 🏆</h2>
+				<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Hackathon AI Winner</h4>
+					<iframe width="500" height="315"
+						src="https://www.youtube.com/embed/6gsyXvV-nB4" frameborder="0" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="col-sm-5">
+					<h5>CESI School - June 2023</h5>
+					<img src="ressources/media/images/IMG_7439.png" width="300px" alt="Team Picture" style="margin-left: 40px;">	
+					<p style="text-align: center;">
+						<br>With my teammates, we created an innovate product to revolutionise the remote control experience.
+						Using the TOF technology from ST microelectronics device, we are able to understand which sign you are doing.<br>
+						You can start, stop, next, previous and more, every media without having to touch your remote control !<br>
+					</p>				
+				</div>
+			</div>
+		</section>
+		<section id="publicAppearances">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Public appearances 📸</h2>
+				<div class="row" style="margin-top: 30px;margin-left: 40px;">
+				<div class="col-sm-6">
+					<h4>Sopra Steria's video</h4>
+					<video width="560" height="315" controls>
+						<source src="ressources/media/videos/Vidéo Sopra GPTW.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="col-sm-5">
+					<h5>Transcipt</h5>
+					<p>
+						Hello, my name is Mathis Aubert. I'm a Software engineer Co-op at Sopra Steria Lyon since last october.<br>
+						Currently, I'm working on a major project that impacts the lives of all French people.<br>
+						Sopra Steria has trusted me on this project because I did my internship in my second year of preparatory cycle.<br>
+						So yes, Sopra Steria is a Great Place To Work where I'm really happy to work.<br>
+						They organise agency breakfast where we can find our future mates. Or more there is the Sopra Steria tennis tournament at Lyon in June.<br>
+					</p>				
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Contact Me 📲</h2>
+			<div class="row" style="margin-top: 30px;margin-left: 40px;margin-right: 40px;">
+				<div class="col-sm-9">
+					<h3 >Let's connect and explore how we can collaborate and learn from each other.</h3>
+					<br><br>
+					<h4> 📩 Email : aubert.mathis@icloud.com</h4>
+					<h4> 📱 Phone : +33 7 81 78 82 87</h4>
+				</div>
+			</div>
+		</section>
+		<footer style="width: 100%;text-align: center;">
+			<p class="align-content-center" style="padding: 20px;">&copy; 2023 - Mathis AUBERT</p>
+		</footer>
+	</main>
 </body>
-
 </html>

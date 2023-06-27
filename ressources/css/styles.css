@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('ressources/fonts/SF-Pro.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AppleGaramond-Light';
+    src: url('ressources/fonts/AppleGaramond-Light.ttf') format('truetype');
+}
+
+html {
+    background-color: black;
+    color: white;
+    font-family: 'SF Pro', sans-serif, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'SF Pro', sans-serif, sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'SF Pro', sans-serif, sans-serif;
+
+}
+
+.button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #f1f1f1;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    text-decoration: none;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+    color: #f1f1f1;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
+  
