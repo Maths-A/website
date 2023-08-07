@@ -65,4 +65,91 @@ body {
     background: var(--color);
     color: #fff;
   }
-  
+
+  #NameTitle {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+
+  .nav-item{
+    font-family: 'San Francisco', sans-serif; 
+    text-decoration: none; 
+    margin-left: 20px; 
+    color: white;
+  }
+
+  #TextBelowImage{
+    margin-right: 45%;
+  }
+
+  #DivImageAbout{
+    text-align: center;margin-left: 50px;
+  }
+
+  #AbouText{
+    text-align: center; 
+    font-family: 'San Francisco', sans-serif; 
+    margin: 80px; 
+    margin-top: 10px; 
+    margin-bottom: 20 px;
+  }
+
+  h2{
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .row{
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+/* Media Queries for different screen sizes */
+@media (max-width: 900px) {
+  #AbouText{
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+  }
+  #TextBelowImage{
+    margin-right: 80%;
+  }
+  #SopraVideo{
+    width: 100%;
+  }
+  #HackathonVideo{
+    width: 100%;
+  }
+}
+
+@media (max-width: 725px) {
+  #DivImageAbout{
+    width: 80%;
+  }
+  #AbouText{
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  #NameTitle {
+    margin-left: 25%;
+  }
+  #NavElement{
+    margin-left: 7%;
+  }
+  .nav-item{
+    margin-left: 10px; 
+  }
+  #TextBelowImage{
+    margin-right: 60%;
+  }
+  #DivImageAbout{
+    margin-left: 10px;
+  }
+}

@@ -12,24 +12,22 @@
 	<header>
 		<nav class="navbar navbar-expand-sm fixed-top" style="opacity: 0.9;background-color: inherit;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#" style="font-family: 'San Francisco', sans-serif;">
-				<img src="ressources/media/images/NameTitle.png" alt="NameTitle" style="max-width: 40%;margin-left: 10px;"></img>
+              <a class="navbar-brand" href="#" style="font-family: 'San Francisco', sans-serif; max-width: 250px;">
+				<img id="NameTitle" src="ressources/media/images/NameTitle.png" alt="NameTitle"></img>
 			  </a>
-			  <div style="position: relative;align-content: end;">
-				<a class="nav-item" href="#about" style="font-family: 'San Francisco', sans-serif; text-decoration: none; color: white;">About Me</a>
-				<a class="nav-item" href="ressources/media/files/Resume Mathis AUBERT Internship.pdf" target=”_blank” style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; color: white;">Resume</a>
-				<a class="nav-item" href="https://www.linkedin.com/in/mathisaubert2911/" target=”_blank” style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; color: white;">LinkedIn</a>
-				<a class="nav-item" href="#contact" style="font-family: 'San Francisco', sans-serif; text-decoration: none; margin-left: 20px; margin-right: 10px; color: white;">Contact</a>
+			  <div id="NavElement" style="position: relative;align-content: end;">
+				<a class="nav-item" href="#about">About Me</a>
+				<a class="nav-item" href="ressources/media/files/Resume Mathis AUBERT Internship.pdf" target=”_blank”>Resume</a>
+				<a class="nav-item" href="https://www.linkedin.com/in/mathisaubert2911/" target=”_blank”>LinkedIn</a>
+				<a class="nav-item" href="#contact">Contact</a>
 			  </div>
             </div>
         </nav>
 	</header>
-	<!-- Part 1 -->
 	<main class="container-fluid" style="margin-top:70px;background-color: black;color: white;">
         <section class="hero" style="text-align: center;background-color: inherit;color: inherit;">
 			<img src="ressources/media/images//f9d165d9-43e7-4896-991b-b90a87c72f15.png" alt="Mathis at Intel" style="max-width: 100%;height: auto;"></img>
-			<p style="margin-right: 45%;">Me at Intel Corp</p>
-			<!-- FIXME : Trouver une solution ici ! -->
+			<p id="TextBelowImage">Me at Intel Corp</p>
             <h1 style="font-family: AppleGaramond-Light; margin-bottom: 30px;">Welcome to my software engineer portfolio!</h1>
 			<a class="button-89" href="#about" class="cta">Enter</a>
 		</section>
@@ -40,11 +38,11 @@
 		<section class="about">
 			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">About Me</h2>
 			<div class="row" >
-				<div class="col-sm-3" style="text-align: center;margin-left: 50px;">
+				<div id="DivImageAbout" class="col-sm-3">
 					<img src="ressources/media/images/IMG_4195 (1).png" width="300px" alt="Mathis's photo">
 				</div>
 				<div class="col-sm-8">
-					<p style="text-align: center; font-family: 'San Francisco', sans-serif; margin: 80px; margin-top: 10px; margin-bottom: 20 px;">As a highly motivated student in an alternation program with Sopra Steria, I'm eager to gain practical experience in software engineering while pursuing my degree in Computer Science at CESI (College engineering school and Master Degree). <br><br>
+					<p id="AbouText">As a highly motivated student in an alternation program with Sopra Steria, I'm eager to gain practical experience in software engineering while pursuing my degree in Computer Science at CESI (College engineering school and Master Degree). <br><br>
 						With a strong foundation in programming languages such as Java, Python, C/C++, and more, I'm well-equipped to tackle complex coding challenges. In addition to my academic pursuits, I've completed multiple projects that have given me hands-on experience in Big Data, software development, and information system administration. <br>
 						As a quick learner and natural problem-solver, I thrive in collaborative team environments and am always willing to go the extra mile to deliver high-quality results on time. <br><br>
 						I'm passionate about building a career in software engineering and contributing to innovative projects that make a positive impact on people's lives.<br><br>
@@ -236,9 +234,9 @@
 		<section id="Awards">
 			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Awards 🏆</h2>
 				<div class="row" style="margin-top: 30px;margin-left: 40px;">
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="HackathonVideo">
 					<h4>Hackathon AI Winner</h4>
-					<iframe width="560" height="315"
+					<iframe  id="HackathonVideoFrame"
 						src="https://www.youtube.com/embed/6gsyXvV-nB4" frameborder="0" allowfullscreen>
 					</iframe>
 				</div>
@@ -256,7 +254,7 @@
 		<section id="publicAppearances">
 			<h2 style="margin-left: 20px;margin-top: 40px;margin-bottom: 40px;">Public appearances 📸</h2>
 				<div class="row" style="margin-top: 30px;margin-left: 40px;">
-				<div class="col-sm-6">
+				<div class="col-sm-6" id="SopraVideo">
 					<h4>Sopra Steria's video</h4>
 					<iframe width="560" height="315"
 						src="https://www.youtube.com/embed/mwSD1RQfQd4" frameborder="0" allowfullscreen>
