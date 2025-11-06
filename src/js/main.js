@@ -40,8 +40,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         
-        // Skip empty hash or javascript: links
-        if (href === '#' || href.startsWith('javascript:')) {
+        // Skip empty hash, javascript:, data:, or vbscript: links for security
+        if (!href || href === '#' || 
+            href.startsWith('javascript:') || 
+            href.startsWith('data:') || 
+            href.startsWith('vbscript:')) {
+            return;
+        }
+        
+        // Only handle internal hash links
+        if (!href.startsWith('#')) {
             return;
         }
         
