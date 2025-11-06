@@ -6,7 +6,6 @@ const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
 // Handle scroll for navbar background
-let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
@@ -15,8 +14,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
 
 // Mobile menu toggle
@@ -264,7 +261,9 @@ if (window.innerWidth > 768) {
 if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach(img => {
-        img.src = img.dataset.src;
+        if (img.dataset.src) {
+            img.src = img.dataset.src;
+        }
     });
 } else {
     // Fallback for browsers that don't support lazy loading
@@ -301,13 +300,10 @@ document.addEventListener('mousedown', () => {
 // ============================================
 // PAGE LOAD ANIMATION
 // ============================================
+// Note: Initial opacity is set in CSS body rule
+// This just ensures smooth transition on load
 window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease';
-    
-    requestAnimationFrame(() => {
-        document.body.style.opacity = '1';
-    });
 });
 
 // ============================================
